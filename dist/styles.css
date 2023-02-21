@@ -3,20 +3,59 @@
 }
 
 * {
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  html, body {
-    height: 100%;
-  }
+html, body {
+  height: 100%;
+}
 
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
 
-  input, button, textarea, select {
-    font: inherit;
-  }
+input, button, textarea, select {
+  font: inherit;
+}
 
-  
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.main-card {
+  border: 1px solid black;
+  width: 400px;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-adds {
+  display: flex;
+  border: 1px solid black;
+}
+
+.add {
+  border: 1px solid black;
+  padding: 8px;
+  flex: 1;
+}
+
+.forecast-cards {
+  margin-top: 60px;
+  display: flex;
+}
+
+.forecast {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+}
+
