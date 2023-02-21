@@ -18,10 +18,17 @@ async function loadData(location) {
         city.innerHTML = actualWeather.location + ', ' + actualWeather.country;
         temperature.innerHTML = Math.round(actualWeather.temp) + ' °C';
         wind.innerHTML = Math.round(3.6 * actualWeather.wind) + ' km/h';
-        rain.innerHTML = actualWeather.rain * 100 + ' %';
-        clouds.innerHTML = actualWeather.cloudiness + ' %';
-    } catch(e) {
-        alert(e);
+        rain.innerHTML = Math.round(actualWeather.rain * 100) + '%';
+        clouds.innerHTML = actualWeather.cloudiness + '%';
+    } catch(error) {
+        alert(error);
+    }
+
+    try {
+        const forecastWeather = await weather(location).forecastData();
+        console.log(forecastWeather);
+    } catch(error) {
+        alert(error)
     }
   
 }
