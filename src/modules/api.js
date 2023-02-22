@@ -52,7 +52,7 @@ const weather = (location) => {
                 nightTemp: days[5].main.temp
             }
 
-            return { secondDay, thirdDay, fourthDay }
+            return [ secondDay, thirdDay, fourthDay ]
         }
     }
 
