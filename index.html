@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <input
+        type="search"
+        id="search"
+        name="search"
+        placeholder="Search location..."
+      />
+      <div class="main-card">
+        <span class="location"></span>
+        <img class="icon" />
+        <span class="temperature">temperature here</span>
+        <div class="card-adds">
+          <div class="add">
+            <div>wind</div>
+            <div class="add-value wind">value</div>
+          </div>
+          <div class="add">
+            <div>risk of rain</div>
+            <div class="add-value rain">value</div>
+          </div>
+          <div class="add">
+            <div>cloudiness</div>
+            <div class="add-value clouds">value</div>
+          </div>
+        </div>
+      </div>
+      <div class="forecast-cards"></div>
+    </div>
+  </body>
+</html>
